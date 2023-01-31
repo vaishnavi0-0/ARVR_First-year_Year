@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main() 
+{
+int a=0,b=1,c,n;
+clrscr();
+printf("enter the no upto which series is to be printed \n");
+scanf("%d",&n);
+c=a+b;
+printf("the fibonacci series is: \n");
+if(n==1)
+printf("%d",a);
+else if(n==2)
+printf("%d \t %d",a,b);
+else if(n>=3)
+{
+for(i=4;i<=n;i++)
+{
+c=a+b;
+a=b;
+b=c;
+printf("%d \t",c);
+}
+}
+getch();
+}
+
+
+
